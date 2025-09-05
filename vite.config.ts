@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
     vue(),
-   tailwindcss(),// بدون أي arguments
+   tailwindcss(),
     vuetify({ autoImport: true }),
   ],
 })
