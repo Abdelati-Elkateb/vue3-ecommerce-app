@@ -1,13 +1,11 @@
 <template>
-  <div class="layout">
-
+        <v-app>
     <HeaderNav />
-
-    <main>
-      <router-view />
-    </main>
-    <FooterNav />
-  </div>
+    <v-main>
+        <router-view />
+            <FooterNav />
+    </v-main>
+  </v-app>
 </template>
 
 <script setup lang="ts">
