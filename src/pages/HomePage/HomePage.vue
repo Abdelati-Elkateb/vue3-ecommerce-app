@@ -1,8 +1,8 @@
 <template>
-    <div class="blog-page">
-        <h1 class="text-3xl font-bold mb-6">home</h1>
-        <p class="text-lg text-gray-700">
-        Welcome to the blog page! Here you'll find the latest articles and updates.
-        </p>
+    <div>
+        <HeroSection />
     </div>
 </template>
+<script setup lang="ts">
+import HeroSection from "./components/HeroSection.vue"
+</script>
