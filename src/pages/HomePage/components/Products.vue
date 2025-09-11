@@ -46,7 +46,6 @@
                             <v-card-subtitle class="mb-4"> 1,000 miles of wonder </v-card-subtitle>
                         </div>
                     </div>
-
                 </v-card>
             </v-col>
             <v-col cols="12" md="4" lg="3" class="pa-4">
@@ -74,3 +73,16 @@ import { ref } from "vue";
 
 const show = ref(false);
 </script>
+
+<style scoped>
+.buy-Shop {
+    background-color: #B88E2F;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: none;
+    height: 74px;
+    width: 222px;
+    margin-top: 30px;
+}
+</style>
