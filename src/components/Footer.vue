@@ -1,23 +1,70 @@
 <template>
-  <v-footer class="d-flex align-center justify-space-around ga-2 flex-wrap flex-grow-1 py-3 h-50" color="surface-light">
-    <v-btn
-      v-for="link in links"
-      :key="link"
-      :text="link"
-      variant="text"
-      rounded
-    ></v-btn>
+  <main class="mt-12">
+    <v-footer class=" py-8 border-t border-gray-200">
+      <v-container>
+        <v-row align="start" class="gap-8 flex-wrap">
+          <v-col cols="12" md="3" class="mb-6 md:mb-0">
+            <v-list>
+              <v-list-item>
+                <v-list-item-title>Funiro.</v-list-item-title>
+                <v-list-subtitle class="text-sm text-gray-500">400 University Drive Suite 200 Coral Gables,
+                  FL 33134 USA</v-list-subtitle>
 
-    <div class="flex-1-0-100 text-center mt-2">
-      {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-    </div>
-  </v-footer>
+              </v-list-item>
+            </v-list>
+          </v-col>
+          <v-col cols="6" md="2" class="mb-6 md:mb-0">
+            <v-list>
+              <v-list-item>
+                <v-list-item-title> Home</v-list-item-title>
+              </v-list-item>
+
+              <v-list-item>
+                <v-list-item-title> Shop</v-list-item-title>
+              </v-list-item>
+
+              <v-list-item>
+                <v-list-item-title>About</v-list-item-title>
+              </v-list-item>
+
+              <v-list-item>
+                <v-list-item-title>Contact</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-col>
+          <v-col cols="6" md="2" class="mb-6 md:mb-0">
+            <v-list>
+              <v-list-item>
+                <v-list-item-title> Help</v-list-item-title>
+              </v-list-item>
+
+              <v-list-item>
+                <v-list-item-title> Payment Options</v-list-item-title>
+              </v-list-item>
+
+              <v-list-item>
+                <v-list-item-title> Returns</v-list-item-title>
+              </v-list-item>
+
+              <v-list-item>
+                <v-list-item-title>Privacy Policies</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-col>
+          <v-col cols="12" md="4">
+            <p class="text-[#9F9F9F] text-base font-semibold mb-2">Newsletter</p>
+            <div class="flex items-center gap-2">
+        <v-text-field label="enter your Address" variant="underlined"></v-text-field>
+              <v-btn color="primary" class="rounded-lg px-6 py-2 text-white font-semibold shadow-md" elevation="2">
+                Subscribe
+              </v-btn>
+            </div>
+            <p class="text-xs text-[#9F9F9F] mt-2">Get the latest news and offers.</p>
+          </v-col>
+        </v-row>
+        <v-divider class="my-6" />
+        <div class="text-[#9F9F9F] text-sm mt-4">© 2025 Funiro. All rights reserved.</div>
+      </v-container>
+    </v-footer>
+  </main>
 </template>
-<script setup>
-  const links = [
-    'Home',
-    'About Us',
-    'Team',
-    'Services'
-  ]
-</script>

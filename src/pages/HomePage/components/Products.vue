@@ -1,88 +1,58 @@
 <template>
-    <v-container class="w-100 mt-12 mb-12">
-        <v-row class="">
-            <v-col cols="12" md="4" lg="3" class="pa-4">
-                <v-card>
-                    <v-img class="h-[301px]" src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" cover></v-img>
-                    <div class="bg-[#F4F5F7]">
-                        <div class="pa-1">
-                            <v-card-title class="text-2xl font-black grey-darken-4"> Syltherine </v-card-title>
+  <v-main>
+    <v-container class="w-full mt-12 mb-12">
+      <div class="text-center mb-6">
+        <h2 class="text-3xl font-bold">Our Products</h2>
+      </div>
 
-                            <v-card-subtitle> Stylish cafe chair</v-card-subtitle>
-                            <v-card-title> Top western road trips </v-card-title>
+      <v-row>
+        <v-col v-for="n in 4" :key="n" cols="3" class="relative">
+          <v-hover v-slot="{ isHovering, props }">
+            <v-card class="mx-auto bg-gray-100 rounded-lg" max-width="600" v-bind="props">
+              <v-img
+                :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
+                aspect-ratio="1"
+                class="h-[300px] rounded-t-lg"
+                cover
+              ></v-img>
 
-                            <v-card-subtitle class="mb-4"> 1,000 miles of wonder </v-card-subtitle>
-                        </div>
+              <v-card-text class="pt-6">
+                <div class="text-gray-500 text-lg mb-2">Syltherine</div>
+                <h3 class="text-orange-600 text-lg mb-2">Stylish cafe chair</h3>
+                <div class="text-gray-500 text-lg mb-2">Syltherine</div>
+              </v-card-text>
+
+              <!-- Overlay عند hover -->
+              <v-expand-transition>
+                <div
+                  v-if="isHovering"
+                  class="absolute inset-0 flex flex-col items-center justify-center bg-gray-900/90 text-white z-20"
+                >
+                  <v-btn class="bg-white text-orange-600 font-bold py-3 px-8 mt-8">Shop Now</v-btn>
+
+                  <div class="flex gap-4 mt-4">
+                    <div class="flex items-center gap-1">
+                      <v-icon size="20">mdi-share</v-icon>
+                      <span>Share</span>
                     </div>
-
-                </v-card>
-            </v-col>
-            <v-col cols="12" md="4" lg="3" class="pa-4">
-                <v-card>
-                    <v-img class="h-[301px]" src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" cover></v-img>
-                    <div class="bg-[#F4F5F7]">
-                        <div class="pa-1">
-                            <v-card-title class="text-2xl font-black grey-darken-4"> Syltherine </v-card-title>
-
-                            <v-card-subtitle> Stylish cafe chair</v-card-subtitle>
-                            <v-card-title> Top western road trips </v-card-title>
-
-                            <v-card-subtitle class="mb-4"> 1,000 miles of wonder </v-card-subtitle>
-                        </div>
+                    <div class="flex items-center gap-1">
+                      <v-icon size="20">mdi-compare</v-icon>
+                      <span>Compare</span>
                     </div>
-
-                </v-card>
-            </v-col>
-            <v-col cols="12" md="4" lg="3" class="pa-4">
-                <v-card>
-                    <v-img class="h-[301px]" src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" cover></v-img>
-                    <div class="bg-[#F4F5F7]">
-                        <div class="pa-1">
-                            <v-card-title class="text-2xl font-black grey-darken-4"> Syltherine </v-card-title>
-
-                            <v-card-subtitle> Stylish cafe chair</v-card-subtitle>
-                            <v-card-title> Top western road trips </v-card-title>
-
-                            <v-card-subtitle class="mb-4"> 1,000 miles of wonder </v-card-subtitle>
-                        </div>
+                    <div class="flex items-center gap-1">
+                      <v-icon size="20">mdi-heart</v-icon>
+                      <span>Like</span>
                     </div>
-                </v-card>
-            </v-col>
-            <v-col cols="12" md="4" lg="3" class="pa-4">
-                <v-card>
-                    <v-img class="h-[301px]" src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" cover></v-img>
-                    <div class="bg-[#F4F5F7]">
-                        <div class="pa-1">
-                            <v-card-title class="text-2xl font-black grey-darken-4"> Syltherine </v-card-title>
-
-                            <v-card-subtitle> Stylish cafe chair</v-card-subtitle>
-                            <v-card-title> Top western road trips </v-card-title>
-
-                            <v-card-subtitle class="mb-4"> 1,000 miles of wonder </v-card-subtitle>
-                        </div>
-                    </div>
-
-                </v-card>
-            </v-col>
-        </v-row>
+                  </div>
+                </div>
+              </v-expand-transition>
+            </v-card>
+          </v-hover>
+        </v-col>
+      </v-row>
     </v-container>
+  </v-main>
 </template>
 
-<script setup>
-import { ref } from "vue";
-
-const show = ref(false);
+<script setup lang="ts">
 </script>
-
-<style scoped>
-.buy-Shop {
-    background-color: #B88E2F;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: none;
-    height: 74px;
-    width: 222px;
-    margin-top: 30px;
-}
-</style>
