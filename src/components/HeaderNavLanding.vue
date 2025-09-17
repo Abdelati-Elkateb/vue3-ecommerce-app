@@ -1,5 +1,6 @@
 <template>
-  <header class="d-flex justify-space-around align-end px-6 py-3 h-[100px]">
+  
+  <header class="d-flex justify-space-between align-end h-[100px]">
     
     <!-- الشعار -->
     <div>

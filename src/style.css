@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+    background-color: #ffffff
+}
+
+.full-width {
+  width: 100vw;      
+  margin-left: calc(-50vw + 50%);
+}

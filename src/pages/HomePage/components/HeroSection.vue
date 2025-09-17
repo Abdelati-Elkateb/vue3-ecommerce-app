@@ -1,5 +1,7 @@
 <template>
+<v-sheet class="full-width" color="grey-lighten-3">
     <v-parallax class="hero-cover" :src="coverHero">
+            <v-container fluid class="pa-0 ma-0">
 
         <v-card class="float-right ma-4 w-md-10vw" max-width="643" hover>
             <v-card-item class="h-[443px] bg-[#FFF3E3]">
@@ -23,7 +25,10 @@
 
 
         </v-card>
+        </v-container>
     </v-parallax>
+    </v-sheet>
+ 
 </template>
 
 <script setup lang="ts">

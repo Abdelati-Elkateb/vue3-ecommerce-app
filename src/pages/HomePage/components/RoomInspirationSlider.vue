@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="full-width">
         <v-row class="main">
             <!-- fix this one -->
             <v-col cols="5">

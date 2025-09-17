@@ -1,15 +1,14 @@
 <template>
   <main class="mt-12">
-    <v-footer class=" py-8 border-t border-gray-200">
+    <v-footer class=" py-8  border-gray-200">
       <v-container>
-        <v-row align="start" class="gap-8 flex-wrap">
+        <v-row>
           <v-col cols="12" md="3" class="mb-6 md:mb-0">
             <v-list>
               <v-list-item>
-                <v-list-item-title>Funiro.</v-list-item-title>
-                <v-list-subtitle class="text-sm text-gray-500">400 University Drive Suite 200 Coral Gables,
-                  FL 33134 USA</v-list-subtitle>
-
+                <h4 class="text-2xl font-bold">Funiro.</h4>
+                <v-list-subtitle class="text-base text-[#9F9F9F]">400 University Drive Suite 200 Coral Gables,
+                 <br> FL 33134 USA</v-list-subtitle>
               </v-list-item>
             </v-list>
           </v-col>
