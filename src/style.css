@@ -1,12 +1,17 @@
-@import "tailwindcss";
+@import "tailwindcss" prefix(tw);
 
 
 body {
   font-family: 'Poppins', sans-serif;
-    background-color: #ffffff
+    background-color: #ffffff;
+    
 }
 
 .full-width {
   width: 100vw;      
   margin-left: calc(-50vw + 50%);
+}
+
+.custom-margin {
+  margin-top:510px !important;
 }

@@ -19,8 +19,4 @@ import Footer from '../components/Footer.vue'
 </script>
 
 <style scoped>
-.layout {
-  max-width: 1200px; /* أو أي قيمة انت تبيها */
-  margin: 0 auto; /* يخلي المحتوى بالوسط */
-}
 </style>

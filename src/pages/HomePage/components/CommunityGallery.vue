@@ -1,5 +1,6 @@
 <template>
-    <div class="full-width">
+    <main class="custom-margin">
+             <div class="full-width">
         <v-row class="pa-12" align="center" justify="center">
             <v-col cols="12" class="text-center">
                 <h1 class="h1 font-weight-bold mb-6">Community Gallery</h1>
@@ -49,6 +50,8 @@
       </v-col> -->
         </v-row>
     </div>
+    </main>
+
 </template>
 
 <style scoped>

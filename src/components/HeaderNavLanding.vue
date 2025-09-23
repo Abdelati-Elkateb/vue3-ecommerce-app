@@ -1,6 +1,5 @@
 <template>
-  
-  <header class="d-flex justify-space-between align-end h-[100px]">
+  <header class="tw:flex tw:justify-between tw:items-center tw:h-[100px]">
     
     <!-- الشعار -->
     <div>

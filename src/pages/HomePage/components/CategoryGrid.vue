@@ -1,17 +1,16 @@
 <template>
-    <v-main class="h-screen mt-12 mb-12">
-    <v-container class="">
+    <main class="tw:py-20">
         <div>
-            <h2 class="text-center mb-6 text-3xl font-bold">Browse The Range</h2>
-            <p class="text-center mb-9 text-lg text-[#8C8C8C]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2 class="tw:text-center tw:text-3xl tw:lg:text-[32px] tw:font-bold tw:mt-8">Browse The Range</h2>
+            <p class="text-center mb-9 text-lg text-[#8C8C8C]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
         </div>
-        <v-row>
-            <v-col v-for="n in image" :key="n" class="d-flex child-flex" cols="4">
+        <div class="tw:grid tw:md:grid-cols-2 tw:lg:grid-cols-3 tw:gap-6 tw:mb-4">
+            <div v-for="n in image" :key="n" class="">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <v-img :lazy-src="image" :src="n" aspect-ratio="1"
-                                class="bg-grey-lighten-2 h-[521px] rounded" cover>
+                            <v-img :lazy-src="image" :src="n" aspect-ratio="1" class="tw:h-[521px] rounded" cover>
                             </v-img>
                         </div>
                         <div class="flip-card-back d-flex flex-column align-center justify-center">
@@ -20,30 +19,12 @@
                                 Now</v-btn>
                         </div>
                     </div>
+                    <h1 class="tw:text-center tw:mt-6"> {{ n.title}}</h1>
                 </div>
 
-            </v-col>
-            <v-row class="fill-height text-center" align="end">
-                <v-col class="">
-                    <div class=" bg-opacity-75 pa-4 rounded">
-                        <h3 class="text-xl font-bold mb-2">Dining</h3>
-                    </div>
-                </v-col>
-                <v-col class="">
-                    <div class=" bg-opacity-75 pa-4 rounded">
-                        <h3 class="text-xl font-bold mb-2">Living</h3>
-                    </div>
-                </v-col>
-                <v-col class="">
-                    <div class=" bg-opacity-75 pa-4 rounded">
-                        <h3 class="text-xl font-bold mb-2">Bedroom </h3>
-                    </div>
-                </v-col>
-
-            </v-row>
-        </v-row>
-    </v-container>
-    </v-main>
+            </div>
+        </div>
+    </main>
 </template>
 
 <script setup lang="ts">
@@ -81,6 +62,7 @@ const image = [
     transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
     transform-style: preserve-3d;
     border-radius: 20px;
+    z-index: 100;
 }
 
 .flip-card:hover .flip-card-inner {

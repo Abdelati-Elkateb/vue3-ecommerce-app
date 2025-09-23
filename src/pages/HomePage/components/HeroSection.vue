@@ -1,34 +1,39 @@
 <template>
-<v-sheet class="full-width" color="grey-lighten-3">
-    <v-parallax class="hero-cover" :src="coverHero">
-            <v-container fluid class="pa-0 ma-0">
+    <main>
+        <v-sheet class="full-width" color="grey-lighten-3">
+            <v-parallax class="hero-cover" :src="coverHero">
+                <v-container fluid class="pa-0 ma-0">
 
-        <v-card class="float-right ma-4 w-md-10vw" max-width="643" hover>
-            <v-card-item class="h-[443px] bg-[#FFF3E3]">
-                <v-container class="">
-                    <v-card-title class="text-base">
-                        New Arrival
-                    </v-card-title>
-                    <h1 class="font-weight-bold text-[52px] mb-4 text-[#B88E2F] font-bold w-75"> Discover Our New Collection</h1>
+                    <v-card class="float-right ma-4 w-md-10vw" max-width="643" hover>
+                        <v-card-item class="tw:h-[443px] tw:bg-[#FFF3E3]">
+                            <v-container class="">
+                                <v-card-title class="text-base">
+                                    New Arrival
+                                </v-card-title>
+                                <h1 class="font-weight-bold text-[52px] mb-4 text-[#B88E2F] font-bold w-75"> Discover
+                                    Our New Collection</h1>
 
-                    <p class="text-lg">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
-                        mattis.
-                    </p>
+                                <p class="text-lg">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                    ullamcorper
+                                    mattis.
+                                </p>
 
-                    <v-btn class="buy-Shop" height="72" min-width="164">
-                        BUY Now
-                    </v-btn>
+                                <v-btn class="buy-Shop" height="72" min-width="164">
+                                    BUY Now
+                                </v-btn>
+                            </v-container>
+
+                        </v-card-item>
+
+
+                    </v-card>
                 </v-container>
+            </v-parallax>
+        </v-sheet>
+    </main>
 
-            </v-card-item>
 
-
-        </v-card>
-        </v-container>
-    </v-parallax>
-    </v-sheet>
- 
 </template>
 
 <script setup lang="ts">
